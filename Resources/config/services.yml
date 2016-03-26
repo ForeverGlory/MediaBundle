@@ -1,0 +1,4 @@
+services:
+#    glory_media.example:
+#        class: Glory\Bundle\MediaBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
