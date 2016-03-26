@@ -1,4 +1,6 @@
 services:
-#    glory_media.example:
-#        class: Glory\Bundle\MediaBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    glory.media.twig.extension.asset:
+        class: Glory\Bundle\MediaBundle\Twig\Extension\AssetExtension
+        arguments: [@service_container, @twig.extension.assets]
+        tags:
+            - { name: twig.extension }
